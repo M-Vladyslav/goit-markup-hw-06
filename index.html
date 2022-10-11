@@ -72,23 +72,40 @@
         </svg>
         <form class="modal-table">
              <p class="modal-review">Залиште свої дані, ми вам передзвонимо</p>
-            <label   for="name"><span>Ім'я</span></label>
-            <div class="name">
-            <input  type="name" name="name" id="name">
+             <div class="form-name">
+            <label   for="name">Ім'я
+            <input  type="name" name="name" id="name"  >
+            <svg class="icon-name" width="12px" height="12px">
+                <use href="./images/symbol-deffs.svg#icon-name"></use>
+            </svg>
+            </label>
             </div>
-            <label  for="tel"><span>Телефон</span></label>
-            <div class="tel">
+            <div class="form-tel">
+            <label  for="tel">Телефон
             <input  type="tel" name="tel" id="tel">
+            <svg class="icon-tel" width="13px"  height="13px">
+                <use href="./images/symbol-deffs.svg#icon-tel"></use>
+            </svg>
+            </label>
             </div>
-            <label  for="mail"><span>Пошта</span></label>
-            <div class="mail">
+            <div class="form-mail">
+            <label  for="mail">Пошта
             <input  type="mail" name="mail" id="mail">
+            <svg class="icon-mail" width="15px" height="12px">
+                <use href="./images/symbol-deffs.svg#icon-mail"></use>
+            </svg>
+            </label>
             </div>
-            <label  for="comment"><span>Коментар</span></label>
-            <div class="comment">
-            <input  type="comment" name="comment" id="comment">
+            <div class="form-comment">
+            <label  for="comment">Коментар
+            <input  type="comment" name="comment" id="comment" placeholder="Введіть текст">
+            </label>
             </div>
-            <button type="submit">Відправити</button>
+            <input type="checkbox" name="" value="">
+            <label for="">Погоджуюся з розсилкою та приймаю Умови договору</label>
+        
+            
+            <button class="button-send" type="submit">Відправити</button>
         </form>
     </button> 
         </div>
@@ -425,7 +442,7 @@
         <form class="footer-mail">
             <label  for="e-mail">e-mail</label>
             <input  type="mail" name="e-mail" id="e-mail">
-            <button type="submit">Підписатися</button>
+            <button class="button-sign" type="submit">Підписатися</button>
         </form>
       </div>
       </div>
