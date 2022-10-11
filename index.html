@@ -72,39 +72,43 @@
         </svg>
         <form class="modal-table">
              <p class="modal-review">Залиште свої дані, ми вам передзвонимо</p>
-             <div class="form-name">
-            <label   for="name">Ім'я
-            <input  type="name" name="name" id="name"  >
-            <svg class="icon-name" width="12px" height="12px">
+             <div class="form-div">
+            <label for="name" class="label-form">Ім'я
+            <input class="input-form" type="text" name="name" id="name"  >
+            <svg class="table-icon" width="18px" height="18px">
                 <use href="./images/symbol-deffs.svg#icon-name"></use>
             </svg>
             </label>
             </div>
-            <div class="form-tel">
-            <label  for="tel">Телефон
-            <input  type="tel" name="tel" id="tel">
-            <svg class="icon-tel" width="13px"  height="13px">
+            <div class="form-div">
+            <label  for="tel" class="label-form">Телефон
+            <input class="input-form" type="tel" name="tel" id="tel">
+            <svg class="table-icon" width="18px"  height="18px">
                 <use href="./images/symbol-deffs.svg#icon-tel"></use>
             </svg>
             </label>
             </div>
-            <div class="form-mail">
-            <label  for="mail">Пошта
-            <input  type="mail" name="mail" id="mail">
-            <svg class="icon-mail" width="15px" height="12px">
+            <div class="form-div">
+            <label for="mail" class="label-form">Пошта
+            <input  class="input-form" type="email" name="mail" id="mail">
+            <svg class="table-icon" width="18px" height="18px">
                 <use href="./images/symbol-deffs.svg#icon-mail"></use>
             </svg>
             </label>
             </div>
-            <div class="form-comment">
-            <label  for="comment">Коментар
-            <input  type="comment" name="comment" id="comment" placeholder="Введіть текст">
+            <div class="form-div">
+            <label  for="comment" class="label-form">Коментар
+            <input class="input-form" type="text" name="comment" id="comment" placeholder="Введіть текст">
             </label>
             </div>
-            <input type="checkbox" name="" value="">
-            <label for="">Погоджуюся з розсилкою та приймаю Умови договору</label>
-        
-            
+            <div class="form-checkbox">
+            <label for="" class="label-checkbox">
+            <input type="checkbox" class="input-checkbox" name="" value="">
+            <svg class="icon-send">
+                <use href="./images/symbol-deffs.svg#icon-send"></use>
+            </svg>
+            Погоджуюся з розсилкою та приймаю Умови договору</label>
+        </div>
             <button class="button-send" type="submit">Відправити</button>
         </form>
     </button> 
