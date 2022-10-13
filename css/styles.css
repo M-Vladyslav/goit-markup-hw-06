@@ -349,26 +349,43 @@ button {
   transform: translate(-50%, -50%) scale(0);
 }
 .modal-table {
-    width: 448px;
-    outline: 2px solid tomato;
-    padding: 40px;
-    margin-left: auto;
-    margin-right: auto;
+  width: 448px;
+  outline: 2px solid tomato;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .form-div {
-    position: relative;
-    outline: 2px solid var(--blue-color);
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+  transition: border-color var(--timing-function);
+}
+.form-div:focus-within .input-form,
+.form-div:hover .input-form {
+  border: 1px solid var(--blue-color);
+}
+.form-div:focus-within .table-icon,
+.form-div:hover .table-icon {
+  fill: var(--blue-color);
 }
 .input-form {
-    margin: 0;
-    
+  margin-bottom: 10px;
+
+  width: 448px;
+  height: 40px;
+  padding-left: 42px;
 }
+
 .table-icon {
-    position: absolute;
-    top: 50%;
-    left: 12px;
+  position: absolute;
+  top: 50%;
+  left: 12px;
+
+  fill: var(--dark-grey-color);
+  transition: fill var(--timing-function);
+  transform: translateY(-50%);
 }
 
 .close-modal {
@@ -790,19 +807,63 @@ button {
   align-items: baseline;
 }
 .footer-news-title {
-  margin: auto;
+  margin-left: 93px;
+  margin-bottom: 20px;
   text-align: center;
-  text-transform: uppercase;
   width: 207px;
   height: 16px;
   font-size: 14px;
   line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
   color: var(--top-line-color);
 }
-.button-sign {
+.footer-news-letter input {
+  margin-top: 0px;
+  padding: 15px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--grey-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+.footer-mail {
+  display: flex;
+  margin-left: 93px;
+}
+
+.footer-news-letter input:hover {
+  border-color: var(--main-text-color);
+  cursor: pointer;
+}
+.footer-mail button {
   width: 200px;
   height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 12px;
+}
+.button-sign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 28px;
   background-color: var(--blue-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  color: var(--top-line-color);
+}
+.text-sign {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* identical to box height, or 188% */
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.footer-icon {
+  margin-left: 10px;
+  fill: var(--top-line-color);
 }

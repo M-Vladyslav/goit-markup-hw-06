@@ -74,39 +74,44 @@
              <p class="modal-review">Залиште свої дані, ми вам передзвонимо</p>
              <div class="form-div">
             <label for="name" class="label-form">Ім'я
+            <div class="form-icon"> 
             <input class="input-form" type="text" name="name" id="name"  >
             <svg class="table-icon" width="18px" height="18px">
                 <use href="./images/symbol-deffs.svg#icon-name"></use>
             </svg>
+        </div>
             </label>
             </div>
             <div class="form-div">
             <label  for="tel" class="label-form">Телефон
+                <div class="form-icon">
             <input class="input-form" type="tel" name="tel" id="tel">
+            
             <svg class="table-icon" width="18px"  height="18px">
                 <use href="./images/symbol-deffs.svg#icon-tel"></use>
             </svg>
+        </div>
             </label>
             </div>
             <div class="form-div">
             <label for="mail" class="label-form">Пошта
+                <div class="form-icon">
             <input  class="input-form" type="email" name="mail" id="mail">
             <svg class="table-icon" width="18px" height="18px">
                 <use href="./images/symbol-deffs.svg#icon-mail"></use>
             </svg>
+        </div>
             </label>
             </div>
             <div class="form-div">
             <label  for="comment" class="label-form">Коментар
-            <input class="input-form" type="text" name="comment" id="comment" placeholder="Введіть текст">
+            <input class="input-form" name="comment" id="comment" placeholder="Введіть текст">
             </label>
             </div>
             <div class="form-checkbox">
-            <label for="" class="label-checkbox">
-            <input type="checkbox" class="input-checkbox" name="" value="">
-            <svg class="icon-send">
-                <use href="./images/symbol-deffs.svg#icon-send"></use>
-            </svg>
+            <label  class="label-checkbox">
+            <input type="checkbox" class="input-checkbox" name="" value="Погоджуюся з розсилкою та приймаю Умови договору">
+            
             Погоджуюся з розсилкою та приймаю Умови договору</label>
         </div>
             <button class="button-send" type="submit">Відправити</button>
@@ -408,8 +413,8 @@
           </ul>
       </div>
       <div class="footer-social-network">
-        <h2 class="footer-social-network-title ">Приєднуйтесь</h2>
-        <ul class="footer-social-list  ">
+        <h2 class="footer-social-network-title">Приєднуйтесь</h2>
+        <ul class="footer-social-list">
         <li class="footer-social-item">
         <a  href="" class="footer-social-link" >
       <svg class="footer-social-icon" width="20px" height="20px">
@@ -444,9 +449,15 @@
       <div class="footer-news-letter">
         <p class="footer-news-title">Підпишіться на розсилку</p>
         <form class="footer-mail">
-            <label  for="e-mail">e-mail</label>
-            <input  type="mail" name="e-mail" id="e-mail">
-            <button class="button-sign" type="submit">Підписатися</button>
+            <label  for="e-mail"></label>
+            <p class="text-e-mail">
+            <input  type="mail" name="e-mail" id="e-mail" placeholder="E-mail">
+            </p>
+            <button class="button-sign" type="submit"><span class="text-sign">Підписатися</span> 
+                <svg class="footer-icon" width="24" height="24">
+                    <use href="./images/symbol-deffs.svg#icon-send"></use>
+                </svg>
+            </button>
         </form>
       </div>
       </div>
