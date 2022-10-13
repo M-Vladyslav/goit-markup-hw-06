@@ -832,7 +832,9 @@ button {
   display: flex;
   margin-left: 93px;
 }
-
+.text-email {
+  color: rgba(255, 255, 255, 0.6);
+}
 .footer-news-letter input:hover {
   border-color: var(--main-text-color);
   cursor: pointer;
