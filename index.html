@@ -67,9 +67,11 @@
           <button data-modal-open class="button-order" type="button">Замовити послугу</button>
          <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-           <button data-modal-close class="close-modal"><svg class="close" width="30px" height="30px">
+           <button data-modal-close class="close-modal">
+            <svg class="close" width="30px" height="30px">
                 <use href="./images/symbol-defss.svg#icon-close"></use>
-        </svg>
+        </svg></button> 
+        
         <form class="modal-table">
              <p class="modal-review">Залиште свої дані, ми вам передзвонимо</p>
              <div class="form-div">
@@ -86,7 +88,6 @@
             <label  for="tel" class="label-form">Телефон
                 <div class="form-icon">
             <input class="input-form" type="tel" name="tel" id="tel">
-            
             <svg class="table-icon" width="18px"  height="18px">
                 <use href="./images/symbol-deffs.svg#icon-tel"></use>
             </svg>
@@ -104,20 +105,19 @@
             </label>
             </div>
             <div class="form-div">
-            <label  for="comment" class="label-form">Коментар
-            <input class="input-form" name="comment" id="comment" placeholder="Введіть текст">
-            </label>
+            <label  for="comment" class="label-form">Коментар</label>
+            <input class="input-comment" name="comment" id="comment" placeholder="Введіть текст">
             </div>
             <div class="form-checkbox">
             <label  class="label-checkbox">
             <input  type="checkbox" class="input-checkbox" name="" value="Погоджуюся з розсилкою та приймаю Умови договору">
             <span class="icon-check">
             </span>
-            Погоджуюся з розсилкою та приймаю <a href="">Умови договору </a></label>
+            Погоджуюся з розсилкою та приймаю <a class="policy" href="">Умови договору </a></label>
         </div>
             <button class="button-send" type="submit">Відправити</button>
         </form>
-    </button> 
+    
         </div>
          </div>
         </div>
