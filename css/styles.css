@@ -370,6 +370,7 @@ button {
   flex-direction: column;
   text-align: start;
   transition: border-color var(--timing-function);
+  margin-bottom: 10px;
 }
 .form-div:focus-within .input-form,
 .form-div:hover .input-form {
@@ -380,11 +381,18 @@ button {
   fill: var(--blue-color);
 }
 .input-form {
-  margin-top: 4px;
-  margin-bottom: 10px;
+  position: relative;
   width: 448px;
   height: 40px;
 }
+.label-form {
+  font-size: 12px;
+  line-height: 1.16;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+
 .input-comment {
   margin-bottom: 10px;
   width: 448px;
@@ -394,11 +402,14 @@ button {
 .form-div:hover .input-comment {
   border: 1px solid var(--blue-color);
 }
+.form-icon {
+  margin-top: 4px;
+}
 .table-icon {
   position: absolute;
   display: inline-block;
-  top: 50%;
-  left: 12px;
+  top: 60%;
+  left: 15px;
   fill: var(--dark-grey-color);
   transition: fill var(--timing-function);
   transform: translateY(-50%);
